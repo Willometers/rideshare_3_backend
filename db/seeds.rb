@@ -28,7 +28,7 @@ Rider.create(name: "Sarah", rating: rand(1..5))
 Rider.create(name: "Christopher", rating: rand(1..5))
 
 puts "Seeding trips..."
-30.times do
+15.times do
     Trip.create(distance: rand(1..100), price: rand(1..100), rider_id: Rider.ids.sample, driver_id: Driver.ids.sample)
 end
 
